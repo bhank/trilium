@@ -22,6 +22,7 @@ export default class WhatLinksHereWidget extends CollapsibleWidget {
 
     async refreshWithNote(note) {
         const targetRelations = note.getTargetRelations();
+        console.log("What links here?", {note, targetRelations})
 
         if (targetRelations.length === 0) {
             this.$body.text("Nothing links here yet ...");

@@ -154,5 +154,6 @@ module.exports = function(filters, selectedColumns = 'notes.*') {
               GROUP BY notes.noteId
               ORDER BY ${orderBy.join(", ")}`;
 
+    console.log("buildSearchQuery returning", {query, params})
     return { query, params };
 };
