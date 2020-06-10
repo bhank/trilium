@@ -161,7 +161,7 @@ export default class EditableTextTypeWidget extends AbstractTextTypeWidget {
 
     insertDateTimeToTextCommand() {
         const date = new Date();
-        const dateString = utils.formatDateTime(date);
+        const dateString = utils.formatDateTimeWithSeconds(date);
 
         this.addTextToEditor(dateString);
     }
