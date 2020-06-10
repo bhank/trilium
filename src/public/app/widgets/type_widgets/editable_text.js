@@ -115,6 +115,18 @@ export default class EditableTextTypeWidget extends AbstractTextTypeWidget {
             mention: mentionSetup,
             codeBlock: {
                 languages: codeBlockLanguages
+            },
+            typing: {
+                transformations: {
+                    remove: [
+                        'quotes',
+                        'mathematical',
+                    ],
+                    extra: [
+                        {from:"<--",to:"←"},
+                        {from:"-->",to:"→"},
+                    ],
+                }
             }
         });
 
