@@ -66,6 +66,7 @@ const TPL = `
         box-shadow: none !important;
         /* This is because with empty content height of editor is 0 and it's impossible to click into it */
         min-height: 500px;
+        height: 100%;
     }
     
     .note-detail-text p:first-child, .note-detail-text::before {
