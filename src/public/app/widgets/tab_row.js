@@ -50,7 +50,7 @@ const TAB_ROW_TPL = `
         background: var(--main-background-color);
         border-radius: 5px 5px 0 0;
         overflow: hidden;
-        margin-top: 2px;
+        margin-top: 1px;
     }
     .note-tab-row * {
         box-sizing: inherit;
